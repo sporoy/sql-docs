@@ -86,12 +86,12 @@ GO
 (1 row(s) affected)  
 ```  
   
- The binary representation of 170 (`a_int_value` or `A`) is `0000 0000 1010 1010`. The binary representation of 75 (`b_int_value` or `B`) is `0000 0000 0100 1011`. Performing the bitwise AND operation on these two values produces the binary result `0000 0000 0000 1010`, which is decimal 10.  
+ The binary representation of 170 (`a_int_value` or `A`) is `0000 0000 0000 0000 0000 0000 1010 1010`. The binary representation of 75 (`b_int_value` or `B`) is `0000 0000 0000 0000 0000 0000 0100 1011`. Performing the bitwise AND operation on these two values produces the binary result `0000 0000 0000 0000 0000 0000 0000 1010`, which is decimal 10.  
   
 ```  
 (A & B)  
-0000 0000 1010 1010  
-0000 0000 0100 1011  
+0000 0000 0000 0000 0000 0000 1010 1010  
+0000 0000 0000 0000 0000 0000 0100 1011  
 -------------------  
 0000 0000 0000 1010  
 ```  
